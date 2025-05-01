@@ -1,7 +1,11 @@
 <h1 align="center"> Frontend Mentor Challenges </h1>
 
-### [QR code component](https://github.com/UPinar/frontend_mentor/tree/main/qr-code-component)
+### [QR code component (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/qr-code-component)
 
-### [Blog preview card](https://github.com/UPinar/frontend_mentor/tree/main/blog-preview-card)
+### [Blog preview card (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/blog-preview-card)
 
-### [Social links profile](https://github.com/UPinar/frontend_mentor/tree/main/social-links-profile)
+### [Social links profile (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/social-links-profile)
+
+### [Recipe page (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/recipe-page)
+
+### [Faq accordion (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/faq-accordion)
