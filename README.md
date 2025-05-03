@@ -10,6 +10,6 @@
 
 ### [Faq accordion (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/faq-accordion)
 
-### [Results summary component (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/result-summary-component)
+### [Results summary component (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/results-summary-component)
 
-### [Product preview card component](https://github.com/UPinar/frontend_mentor/tree/main/product-preview-card-component)
+### [Product preview card component (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/product-preview-card-component)
