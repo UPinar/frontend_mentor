@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+
+/* || VARIABLES */
+:root {
+  --CLR-PRIMARY-DARK-CYAN: hsl(185, 75%, 39%);
+  --CLR-PRIMARY-DESATURATED-BLUE: hsl(229, 23%, 23%);
+  --CLR-PRIMARY-DARK-GRAYISH-BLUE: hsl(227, 10%, 46%);
+
+  --CLR-NEUTRAL-DARK-GRAY: hsl(0, 0%, 59%);
+
+  --CLR-WHITE: #fff;
+  --CLR-LINE: #e8e9ec;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+html {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: var(--CLR-PRIMARY-DARK-CYAN);
+
+  position: relative;
+}
+
+.profile-card {
+  max-width: 350px;
+  margin-inline: 1.5rem;
+  background-color: var(--CLR-WHITE);
+  border-radius: 15px;
+}
+
+.profile-card-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > .profile-card-background-image {
+    width: 100%;
+    height: auto;
+
+    border-radius: 15px 15px 0 0;
+  }
+
+  > .profile-card-person-image {
+    border-radius: 50%;
+    border: 5px solid var(--CLR-WHITE);
+    margin-top: -3rem;
+
+    margin-block-end: calc(1.5rem - 5px);
+  }
+}
+
+.profile-card-personal-information {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-rows: auto auto;
+  gap: 0.5rem;
+
+  align-items: start;
+
+  padding-inline: 96px 95px;
+  padding-block-end: 1.5rem;
+  border-block-end: 1px solid var(--CLR-LINE);
+
+  > p:nth-child(1) {
+    text-align: left;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: var(--CLR-PRIMARY-DESATURATED-BLUE);
+  }
+
+  > p:nth-child(2) {
+    text-align: right;
+
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--CLR-PRIMARY-DARK-GRAYISH-BLUE);
+  }
+
+  > p:nth-child(3) {
+    text-align: center;
+    grid-column: 1 / -1;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--CLR-PRIMARY-DARK-GRAYISH-BLUE);
+  }
+}
+
+.profile-card-interaction {
+  margin-inline: 41px 52px;
+  padding-block: 1.5rem;
+
+  display: flex;
+  flex-direction: row;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    text-align: center;
+  }
+
+  > div:nth-of-type(1) {
+    margin-inline-end: 38px;
+  }
+  > div:nth-of-type(2) {
+    margin-inline-end: 46px;
+  }
+
+  > div > p:first-of-type {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: var(--CLR-PRIMARY-DESATURATED-BLUE);
+  }
+
+  > div > p:nth-of-type(2) {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    color: var(--CLR-PRIMARY-DARK-GRAYISH-BLUE);
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .profile-card-personal-information {
+    padding-inline: 108px 107px;
+  }
+
+  .profile-card-interaction {
+    margin-inline: 47px 54px;
+
+    > div:nth-of-type(1) {
+      margin-inline-end: 46px;
+    }
+    > div:nth-of-type(2) {
+      margin-inline-end: 54px;
+    }
+  }
+}
