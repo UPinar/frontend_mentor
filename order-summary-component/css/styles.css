@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* || VARIABLES */
+:root {
+  --CLR-PRIMARY-WHITE: #fff;
+  --CLR-PRIMARY-PALE-BLUE: hsl(225, 100%, 94%);
+  --CLR-PRIMARY-BRIGHT-BLUE: hsl(245, 75%, 52%);
+  --CLR-PRIMARY-ACTIVE-PURPLE: #766cf1;
+
+  --CLR-NEUTRAL-VERY-PALE-BLUE: hsl(225, 100%, 98%);
+  --CLR-NEUTRAL-DESATURATED-BLUE: hsl(224, 23%, 55%);
+  --CLR-NEUTRAL-DARK-BLUE: hsl(223, 47%, 23%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  border: none;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+html {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--CLR-PRIMARY-PALE-BLUE);
+
+  display: grid;
+  place-content: center;
+
+  position: relative;
+}
+
+.background-pattern-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.order-card {
+  max-width: 450px;
+
+  margin-inline: 1.5rem;
+  border-radius: 20px;
+  background-color: var(--CLR-PRIMARY-WHITE);
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.1518);
+}
+
+.order-card-hero-image > img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0 0;
+}
+
+.order-card-general-information {
+  margin-inline: 2rem;
+  margin-block: 2rem 1.5rem;
+  text-align: center;
+
+  > h1 {
+    margin-block-end: 1rem;
+
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--CLR-NEUTRAL-DARK-BLUE);
+  }
+
+  > p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    color: var(--CLR-NEUTRAL-DESATURATED-BLUE);
+  }
+}
+
+.order-card-payment-plan-information {
+  margin: 0 1.5rem 1.5rem;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: var(--CLR-NEUTRAL-VERY-PALE-BLUE);
+  border-radius: 11px;
+
+  > img {
+    margin-inline-end: 20px;
+  }
+
+  > .order-card-payment-plan-type {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    > p:first-child {
+      font-size: 14px;
+      font-weight: 900;
+      color: var(--CLR-NEUTRAL-DARK-BLUE);
+    }
+
+    > p:last-child {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--CLR-NEUTRAL-DESATURATED-BLUE);
+    }
+  }
+
+  > .order-card-payment-plan-change {
+    margin-left: auto;
+    font-size: 13px;
+    font-weight: 900;
+    color: var(--CLR-PRIMARY-BRIGHT-BLUE);
+    text-decoration: underline;
+  }
+
+  > .order-card-payment-plan-change:hover {
+    color: var(--CLR-PRIMARY-ACTIVE-PURPLE);
+    cursor: pointer;
+  }
+}
+
+.order-card-payment-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 1.5rem;
+
+  > .order-card-proceed-button {
+    margin-block-end: 1.5rem;
+    padding: 15px 4rem;
+    border-radius: 11px;
+
+    background-color: var(--CLR-PRIMARY-BRIGHT-BLUE);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    color: var(--CLR-PRIMARY-WHITE);
+    font-size: 15px;
+    font-weight: 900;
+  }
+
+  > .order-card-proceed-button:hover {
+    cursor: pointer;
+    background-color: var(--CLR-PRIMARY-ACTIVE-PURPLE);
+  }
+
+  > .order-card-cancel-button {
+    margin-block-end: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--CLR-PRIMARY-WHITE);
+
+    > span {
+      display: inline-block;
+      font-size: 15px;
+      font-weight: 900;
+      color: var(--CLR-NEUTRAL-DESATURATED-BLUE);
+    }
+
+    > span:hover {
+      cursor: pointer;
+      color: var(--CLR-NEUTRAL-DARK-BLUE);
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .order-card {
+    max-width: 450px;
+  }
+
+  .background-pattern-container {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+
+  .order-card-hero-image {
+    margin-block-end: 42px;
+  }
+
+  .order-card-general-information {
+    margin-inline: 3rem;
+    text-align: center;
+
+    > * {
+      margin-block-end: 1.25rem;
+    }
+
+    > h1 {
+      font-size: 1.75rem;
+      font-weight: 900;
+      color: var(--CLR-NEUTRAL-DARK-BLUE);
+    }
+
+    > p {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 25px;
+      color: var(--CLR-NEUTRAL-DESATURATED-BLUE);
+    }
+  }
+
+  .order-card-payment-plan-information {
+    margin-inline: 3rem;
+    margin-block-end: 2rem;
+    padding: 25px 1.5rem;
+
+    > .order-card-payment-plan-type {
+      gap: 6px;
+
+      > p:first-child {
+        font-size: 16px;
+      }
+
+      > p:last-child {
+        font-size: 16px;
+      }
+    }
+
+    > .order-card-payment-plan-change {
+      font-size: 14px;
+    }
+  }
+
+  .order-card-payment-buttons {
+    margin-inline: 3rem;
+  }
+}

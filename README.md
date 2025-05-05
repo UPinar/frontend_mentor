@@ -15,3 +15,5 @@
 ### [Product preview card component (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/product-preview-card-component)
 
 ### [NFT preview card component (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/nft-preview-card-component)
+
+### [Order summary component (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/order-summary-component)
