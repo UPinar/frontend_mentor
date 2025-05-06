@@ -19,3 +19,5 @@
 ### [Order summary component (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/order-summary-component)
 
 ### [Profile card component(NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/profile-card-component)
+
+### [Social proof section(NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/social-proof-section)
