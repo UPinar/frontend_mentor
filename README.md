@@ -18,8 +18,10 @@
 
 ### [Order summary component (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/order-summary-component)
 
-### [Profile card component(NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/profile-card-component)
+### [Profile card component (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/profile-card-component)
 
-### [Social proof section(NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/social-proof-section)
+### [Social proof section (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/social-proof-section)
 
-### [Huddle landing page with single introductory section(NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/huddle-landing-page-with-single-introductory-section)
+### [Huddle landing page with single introductory section (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/huddle-landing-page-with-single-introductory-section)
+
+### [Browser extensions manager UI (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/browser-extensions-manager-ui)
