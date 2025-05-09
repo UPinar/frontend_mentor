@@ -25,3 +25,5 @@
 ### [Huddle landing page with single introductory section (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/huddle-landing-page-with-single-introductory-section)
 
 ### [Browser extensions manager UI (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/browser-extensions-manager-ui)
+
+### [Character counter (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/character-counter)

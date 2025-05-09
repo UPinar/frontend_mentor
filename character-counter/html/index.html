@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Frontend Mentor | Character counter</title>
+  </head>
+  <body class="light-theme">
+    <div class="wrapper">
+      <header class="header-section">
+        <section class="header-logo-section">
+          <img
+            class="light-theme-logo"
+            src="../assets/images/logo-light-theme.svg"
+            alt="Logo of the character counter"
+            width="251"
+            height="40"
+          />
+          <img
+            class="dark-theme-logo hidden"
+            src="../assets/images/logo-dark-theme.svg"
+            alt="Logo of the character counter"
+            width="246"
+            height="40"
+          />
+        </section>
+        <section class="header-theme-icon-section">
+          <img
+            class="light-theme-icon"
+            src="../assets/images/icon-moon.svg"
+            alt="light theme icon"
+            width="22"
+            height="22"
+          />
+          <img
+            class="dark-theme-icon hidden"
+            src="../assets/images/icon-sun.svg"
+            alt="dark theme icon"
+            width="22"
+            height="22"
+          />
+        </section>
+      </header>
+      <main>
+        <section class="text-section">
+          <h2 class="text-preset-1-mobile">Analyze your text in real-time.</h2>
+          <section class="text-area-section">
+            <textarea
+              class="text-preset-3 text-section-textarea"
+              placeholder="Start typing here… (or paste your text)"
+              maxlength="999"
+            >
+            </textarea>
+            <aside class="character_limit_text hidden">
+              <img
+                src="../assets/images/icon-info.svg"
+                alt="info icon"
+                width="14"
+                height="15"
+              />
+              <p class="text-preset-4">
+                Limit reached! Your text exceeds
+                <span class="character-limit"></span>
+                characters.
+              </p>
+            </aside>
+          </section>
+
+          <section class="text-options-section">
+            <section class="text-options-exclude-spaces">
+              <input type="checkbox" class="exclude_space_checkbox" />
+              <label class="text-preset-4">
+                Exclude Spaces
+              </label>
+            </section>
+
+            <section class="text-options-char-limit">
+              <input class="character_limit_checkbox" type="checkbox" />
+              <label class="text-preset-4">Set Character Limit</label>
+              <textarea
+                class="text-preset-4 not-visible character_limit_textarea"
+                maxlength="3"
+              ></textarea>
+            </section>
+            <section class="text-options-reading-time">
+              <p class="text-preset-4">
+                Approx. reading time: <span class="reading-time-span"></span>
+              </p>
+            </section>
+          </section>
+        </section>
+
+        <section class="result-section">
+          <ul class="result-section-list">
+            <li class="result-section-list-character-count">
+              <p class="character-count text-preset-1-mobile">00</p>
+              <p class="text-preset-3">Total Characters
+                <span class="not-visible no-space-text text-preset-4">(no space)</span>
+              </p>
+              
+            </li>
+            <li class="result-section-list-word-count">
+              <p class="word-count text-preset-1-mobile">00</p>
+              <p class="text-preset-3">Word Count</p>
+            </li>
+            <li class="result-section-list-sentence-count">
+              <p class="sentence-count text-preset-1-mobile">00</p>
+              <p class="text-preset-3">Sentence Count</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="letter-section">
+          <h2 class="text-preset-2">Letter Density</h2>
+          <section class="letters-alphabet-section">
+          </section>
+
+          <section class="element-not-exists">
+            <p class="text-preset-4">
+              No characters found. Start typing to see letter density.
+            </p>
+          </section>
+          <section class="many-element-exists hidden">
+            <p>See more</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+          </section>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script src="../js/script.js"></script>
+</html>
