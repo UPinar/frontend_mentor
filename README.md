@@ -27,3 +27,5 @@
 ### [Browser extensions manager UI (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/browser-extensions-manager-ui)
 
 ### [Character counter (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/character-counter)
+
+### [Product list with cart (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/product-list-with-cart)

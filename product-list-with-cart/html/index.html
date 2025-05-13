@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+  <body>
+    <div class="wrapper-container">
+      <section class="deserts-section">
+        <h1 class="text-preset-1">Desserts</h1>
+        <div class="desert-item-container"></div>
+      </section>
+
+      <section class="cart-section">
+        <h2 class="text-preset-2">Your Cart <span>(0)</span></h2>
+
+        <section class="no-item-exist-section">
+          <img
+            class="empty-cart-image"
+            src="../assets/images/illustration-empty-cart.svg"
+            alt="Empty Cart Image"
+            width="128"
+            height="128"
+          />
+          <p class="text-preset-4-bold">Your added items will appear here</p>
+        </section>
+
+        <section class="item-exist-section hidden">
+          <!-- <section class="cart-item-section">
+            <section class="cart-item">
+              <h2 class="cart-item-name text-preset-4-bold">
+                Classic Tiramisu
+              </h2>
+              <p class="cart-item-count text-preset-4-bold">1x</p>
+              <p class="cart-item-count-price text-preset-4">
+                $5.50
+              </p>
+              <p class="cart-item-total-price text-preset-4-bold">
+               $5.50
+              </p>
+            </section>
+
+            <button class="remove-button text-preset-4-bold">
+              <img
+                src="../assets/images/icon-remove-item.svg"
+                alt="Remove Icon"
+                width="10"
+                height="10"
+              />
+            </button>
+          </section> -->
+
+          <section class="order-total-section">
+            <p class="text-preset-4">Order Total</p>
+            <p class="text-preset-2 order-total-section-price">$46.50</p>
+          </section>
+          <div class="carbon-neutral-container">
+            <img
+              class="carbon-neutral-icon"
+              src="../assets/images/icon-carbon-neutral.svg"
+              alt="Carbon Neutral Icon"
+              width="21"
+              height="20"
+            />
+            <p class="text-preset-4">
+              This is a
+              <strong class="text-preset-4-bold">carbon-neutral</strong>
+              delivery
+            </p>
+          </div>
+          <button class="confirm-order-button text-preset-3">
+            Confirm Order
+          </button>
+        </section>
+      </section>
+    </div>
+
+    <section class="order-confirm-section hidden">
+      <section class="order-confirm-information-section">
+        <img
+          class="order-confirm-image"
+          src="../assets/images/icon-order-confirmed.svg"
+          alt="order confirmed icon"
+          width="48"
+          height="48"
+        />
+        <h2 class="text-preset-1">Order Confirmed</h2>
+        <p>We hope you enjoy your food!</p>
+      </section>
+      <section class="order-confirm-items-section">
+        <section class="order-confirm-total-section">
+          <p class="text-preset-4">Order Total</p>
+          <p class="text-preset-2 order-confirm-total-price">$46.50</p>
+        </section>
+      </section>
+
+      <button class="start-new-order-button text-preset-3">
+        Start New Order
+      </button>
+    </section>
+  </body>
+  <script src="../js/script.js"></script>
+</html>
