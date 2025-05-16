@@ -1,0 +1,694 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --CLR-WHITE: #ffffff;
+  --CLR-BLACK: #000000;
+
+  --CLR-GREY-500: #5e6e85;
+  --CLR-GREY-300: #acc1de;
+
+  --CLR-BLUE-900: #253347;
+  --CLR-BLUE-500: #345ff6;
+  --CLR-BLUE-300: #b3d3f1;
+  --CLR-BLUE-100: #e1e7fe;
+
+  --CLR-GRADIENT-START: hsla(183, 95%, 92%, 0);
+  --CLR-GRADIENT-END: hsla(216, 95%, 92%, 1);
+}
+
+.text-preset-1 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -5%;
+}
+
+.text-preset-2 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -5%;
+}
+
+.text-preset-3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -5%;
+}
+
+.text-preset-4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -5%;
+}
+
+.text-preset-5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -5%;
+}
+
+.text-preset-6-semi-bold {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.text-preset-6-regular {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.text-preset-7-bold {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.text-preset-7-regular {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin-inline: 0;
+  margin-block: 0;
+  padding-inline: 0;
+  padding-block: 0;
+}
+
+img,
+button,
+svg,
+input {
+  display: block;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+
+  position: relative;
+}
+
+body {
+  display: grid;
+  place-content: center;
+}
+
+.wrapper-container {
+  max-inline-size: 500px;
+}
+
+.background-detail-section {
+  position: absolute;
+  block-size: 649.21px;
+  border-radius: 0 0 35px 35px;
+  inset: 0;
+  z-index: -1;
+
+  background: linear-gradient(
+    to right,
+    var(--CLR-GRADIENT-START) 0%,
+    var(--CLR-GRADIENT-END) 100%
+  );
+}
+
+.bmi-calculator-section {
+  padding-inline: 1.5rem;
+  padding-block-start: 2rem;
+  margin-block-end: 4rem;
+}
+
+/* bmi-calculator-information SECTION */
+.bmi-calculator-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-block-end: 1.5rem;
+}
+
+.bmi-calculator-information > .bmi-calculator-information-icon {
+  inline-size: 40px;
+  block-size: auto;
+
+  margin-block-end: 2rem;
+}
+
+.bmi-calculator-information > h1 {
+  text-align: center;
+  color: var(--CLR-BLUE-900);
+  margin-block-end: 1.5rem;
+}
+
+.bmi-calculator-information > p {
+  text-align: center;
+  color: var(--CLR-GREY-500);
+}
+
+/* bmi-calculator SECTION */
+.bmi-calculator {
+  padding-inline: 1.5rem;
+  padding-block: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--CLR-WHITE);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.bmi-calculator > h2 {
+  color: var(--CLR-BLUE-900);
+
+  margin-block-end: 1.5rem;
+}
+
+.bmi-calculator > .bmi-calculator-form {
+  margin-block-end: 1.5rem;
+}
+
+.bmi-calculator-form-radio-buttons {
+  display: flex;
+  column-gap: 1.5rem;
+  margin-block-end: 1.5rem;
+}
+
+.bmi-calculator-form-radio-button-container {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+
+  > button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  > button:focus-visible {
+    outline: none;
+    border-radius: 50%;
+
+    > svg circle {
+      stroke: var(--CLR-BLUE-500);
+      stroke-width: 1px;
+    }
+  }
+
+  > label {
+    color: var(--CLR-BLUE-900);
+  }
+}
+
+.bmi-calculator-form-input-containers {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.bmi-calculator-form-input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+
+  > label {
+    color: var(--CLR-GREY-500);
+  }
+}
+
+.bmi-calculator-form-input-height-container,
+.bmi-calculator-form-input-weight-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  column-gap: 1rem;
+}
+
+.bmi-calculator-form-input-data {
+  padding-inline: 1.5rem;
+  padding-block: 1.5rem;
+  border: 1px solid var(--CLR-GREY-500);
+  border-radius: 0.75rem;
+
+  display: flex;
+  column-gap: 1.5rem;
+
+  > input {
+    border: none;
+    inline-size: 100%;
+    color: var(--CLR-BLUE-900);
+    font-family: inherit;
+  }
+
+  > input:focus {
+    outline: none;
+  }
+
+  > p {
+    color: var(--CLR-BLUE-500);
+  }
+}
+
+.bmi-calculator-result {
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  background-color: var(--CLR-BLUE-500);
+  color: var(--CLR-WHITE);
+  border-radius: 1rem;
+
+  > p:first-child {
+    margin-block-end: 0.5rem;
+  }
+
+  /* p:nth-child(2) */
+  > .bmi-calculator-result-value {
+    margin-block-end: 1.5rem;
+  }
+}
+
+.bmi-result-information-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-block-end: 61.61px;
+
+  > img {
+    inline-size: 100%;
+    block-size: auto;
+    margin-block-end: 3rem;
+  }
+
+  > .bmi-result-information-text {
+    padding-inline: 23.5px;
+
+    > h2 {
+      color: var(--CLR-BLUE-900);
+      margin-block-end: 2rem;
+    }
+
+    > p {
+      color: var(--CLR-GREY-500);
+    }
+  }
+}
+
+/* ---------------------------------------------- */
+
+.healthy-lifestyle-section {
+  padding-inline: 1.5rem;
+  padding-block: 3.5rem;
+
+  margin-block-end: 5.125rem;
+  background: color-mix(
+    in srgb,
+    var(--CLR-GRADIENT-START) 100%,
+    var(--CLR-GRADIENT-END) 30%
+  );
+}
+
+.healthy-lifestyle-card {
+  > svg {
+    margin-block-end: 2rem;
+  }
+  > h2 {
+    color: var(--CLR-BLUE-900);
+    margin-block-end: 1.5rem;
+  }
+
+  > p {
+    color: var(--CLR-GREY-500);
+  }
+}
+
+.healthy-lifestyle-card:not(:last-child) {
+  margin-block-end: 2rem;
+}
+
+/* ---------------------------------------------- */
+
+.bmi-limitations-section {
+  padding-inline: 1.5rem;
+}
+
+.bmi-limitations-information {
+  text-align: center;
+  margin-block-end: 3.5rem;
+
+  > h2 {
+    color: var(--CLR-BLUE-900);
+    margin-block-end: 2rem;
+  }
+
+  > p {
+    color: var(--CLR-GREY-500);
+    margin-block-end: 2rem;
+  }
+}
+
+.bmi-limitation-card {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 1rem;
+  align-items: center;
+  background-color: var(--CLR-WHITE);
+
+  padding-block: 1.5rem;
+  padding-inline: 1.5rem;
+  box-shadow: 16px 32px 56px 0px hsla(211, 40%, 69%, 0.25);
+  border-radius: 1rem;
+
+  > h3 {
+    color: var(--CLR-BLUE-900);
+  }
+
+  > p {
+    grid-column: 1 / 3;
+    color: var(--CLR-GREY-500);
+  }
+}
+
+.bmi-limitation-card:not(:last-child) {
+  margin-block-end: 1rem;
+}
+
+/* ---------------------------------------------- */
+
+@media screen and (min-width: 768px) {
+  .background-detail-section {
+    block-size: 40rem;
+  }
+
+  .wrapper-container {
+    max-inline-size: 900px;
+  }
+
+  .bmi-calculator-section {
+    padding-inline: 2.5rem;
+  }
+
+  .bmi-calculator-information {
+    margin-block-end: 2.5rem;
+
+    > svg {
+      margin-block-end: 2.5rem;
+    }
+
+    > h1 {
+      max-inline-size: 550px;
+      text-align: center;
+      text-wrap: balance;
+    }
+  }
+
+  .bmi-calculator {
+    padding-inline: 2rem;
+    padding-block: 2rem;
+
+    > h2 {
+      margin-block-end: 2rem;
+    }
+  }
+
+  .bmi-calculator-form-radio-buttons {
+    margin-block-end: 2rem;
+  }
+
+  .bmi-calculator-form-radio-buttons > * {
+    inline-size: 50%;
+  }
+
+  .bmi-calculator-form-input-containers {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5rem;
+
+    margin-block-end: 2rem;
+  }
+
+  .bmi-calculator-result {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
+    border-radius: 16px 99px 99px 16px;
+
+    > p:first-child {
+      grid-column: 1 / 2;
+    }
+
+    > .bmi-calculator-result-value {
+      grid-column: 1 / 2;
+      margin-block-end: 0px;
+    }
+
+    > .bmi-calculator-result-information {
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+      align-self: center;
+    }
+  }
+
+  .bmi-result-information-section {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4.5rem;
+
+    margin-block-end: 95.91px;
+
+    > * {
+      max-inline-size: 50%;
+      margin-block-end: none;
+    }
+
+    > img {
+      margin-block-end: 0px;
+      margin-inline-start: -116px;
+    }
+  }
+
+  .healthy-lifestyle-section {
+    padding-inline: 39px;
+    padding-block: 50px;
+
+    margin-block-end: 96.09px;
+  }
+
+  .healthy-lifestyle-card {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 2.5rem;
+    row-gap: 1.5rem;
+
+    > svg {
+      margin-block-end: 0px;
+      grid-row: 1 / 3;
+
+      align-self: center;
+    }
+
+    > h2 {
+      margin-block-end: 0px;
+    }
+  }
+
+  .healthy-lifestyle-card:not(:last-child) {
+    margin-block-end: 2.5rem;
+  }
+
+  .bmi-limitations-section {
+    padding-inline: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 1.5rem;
+  }
+
+  .bmi-limitation-card {
+    flex: 0 1 calc(50% - 0.5rem);
+    padding-inline: 2rem;
+    padding-block: 2rem;
+  }
+
+  .bmi-limitation-card:last-child {
+    margin-inline: auto;
+  }
+
+  .bmi-limitation-card:not(:last-child) {
+    margin-block-end: 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper-container {
+    max-inline-size: none;
+  }
+
+  .background-detail-section {
+    inline-size: 1002px;
+    block-size: 737px;
+    border-radius: 0 0 35px 35px;
+  }
+
+  .bmi-calculator-section {
+    margin-inline: 8.75rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 5.5rem 1fr 1fr;
+    column-gap: 2rem;
+    padding-block: 5.5rem;
+    padding-inline: 0px;
+
+    > .bmi-calculator-information {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+      margin-block-end: 0px;
+      padding-inline-end: 100px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      > svg {
+        margin-block-end: 1.5rem;
+      }
+
+      > h1 {
+        text-align: left;
+        margin-block-end: 2rem;
+        font-size: ;
+      }
+
+      > p {
+        text-align: left;
+      }
+    }
+
+    > .bmi-calculator {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      margin-block-end: 0px;
+    }
+  }
+
+  .bmi-result-information-section {
+    display: flex;
+    flex-direction: row;
+    column-gap: 131px;
+    margin-inline: 9rem;
+    margin-block-end: 86px;
+
+    > img {
+      margin-inline: 0px;
+      margin-block-end: 0px;
+      inline-size: 35.25rem;
+    }
+
+    > .bmi-result-information-text {
+      display: flex;
+      flex-direction: column;
+      padding-inline: 0px;
+
+      > img {
+        align-self: end;
+        margin-block-end: 2.25rem;
+      }
+    }
+  }
+
+  .healthy-lifestyle-section {
+    padding-block: 92.5px;
+    padding-inline: 140.5px 112.5px;
+    margin-block-end: 0px;
+
+    display: flex;
+    column-gap: 2rem;
+
+    > .healthy-lifestyle-card {
+      display: flex;
+      row-gap: 0px;
+      flex-direction: column;
+      margin-block-end: 0px;
+
+      svg {
+        align-self: flex-start;
+        margin-block-end: 3rem;
+      }
+
+      h2 {
+        margin-block-end: 1.5rem;
+      }
+    }
+  }
+
+  .bmi-limitations-section {
+    padding-block: 6.5rem;
+    padding-inline: 9rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: repeat(3, 1fr);
+    gap: 1.5rem;
+
+    grid-template-areas:
+      "header header card1"
+      "image card2 card3"
+      "image card4 card5";
+
+    > .bmi-limitations-information {
+      grid-area: header;
+      text-align: left;
+      inline-size: 564px;
+    }
+
+    > img {
+      grid-area: image;
+      margin-inline-start: 161px;
+    }
+
+    > .bmi-limitation-card {
+      inline-size: 365px;
+    }
+
+    .bmi-limitation-card:nth-child(3) {
+      grid-area: card1;
+      margin-inline-start: -95px;
+    }
+
+    .bmi-limitation-card:nth-child(4) {
+      grid-area: card2;
+    }
+
+    .bmi-limitation-card:nth-child(5) {
+      grid-area: card3;
+    }
+
+    .bmi-limitation-card:nth-child(6) {
+      grid-area: card4;
+      margin-inline-start: -170px;
+    }
+
+    .bmi-limitation-card:nth-child(7) {
+      grid-area: card5;
+      margin-inline-start: -170px;
+    }
+  }
+}

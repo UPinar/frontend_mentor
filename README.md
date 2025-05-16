@@ -29,3 +29,5 @@
 ### [Character counter (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/character-counter)
 
 ### [Product list with cart (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/product-list-with-cart)
+
+### [BMI calculator (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/bmi-calculator)
