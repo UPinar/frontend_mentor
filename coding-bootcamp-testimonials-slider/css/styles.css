@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --CLR-WHITE: #ffffff;
+  --CLR-BLACK: #000000;
+  --CLR-GRAY-400: #b9b9ce;
+  --CLR-GRAY-100: #ebebeb;
+  --CLR-GRAY-50: #f4f4fc;
+  --CLR-PURPLE-500: #cf6bcb;
+  --CLR-PINK-500: #d3629d;
+  --CLR-GRADIENT-START: #9975d0;
+  --CLR-GRADIENT-END: #4a3fdb;
+  --CLR-BLUE-950: #202047;
+}
+
+.text-preset-1 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 137.5%;
+  letter-spacing: 0px;
+}
+
+.text-preset-2-bold {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 190%;
+  letter-spacing: 0px;
+}
+
+.text-preset-2-medium {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 190%;
+  letter-spacing: 0px;
+}
+
+.text-preset-1-mobile {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 135%;
+  letter-spacing: 0px;
+}
+
+.text-preset-2-bold-mobile {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 135%;
+  letter-spacing: 0px;
+}
+
+.text-preset-2-medium-mobile {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 135%;
+  letter-spacing: 0px;
+}
+
+*,
+*::before,
+*::after {
+  margin-inline: 0;
+  margin-block: 0;
+  padding-inline: 0;
+  padding-block: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  block-size: calc(100vh - 1.5rem);
+}
+
+.person-card-section {
+  margin-block-start: 1.5rem;
+  block-size: inherit;
+
+  background-image: url(../images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 285px 72px;
+}
+
+.person-image-section {
+  background-image: url(../images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  margin-inline: 1.5rem;
+  padding-block-start: 30px;
+  padding-block-end: 24.5px;
+
+  display: grid;
+  place-content: center;
+
+  position: relative;
+
+  > img {
+    inline-size: 254px;
+    block-size: auto;
+  }
+
+  margin-block-end: 32.5px;
+}
+
+.img-slider-container {
+  background-color: var(--CLR-WHITE);
+  inline-size: 80px;
+  block-size: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+
+  border-radius: 28px;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 4.5px;
+
+  box-shadow: 0 15px 20px -10px rgba(36, 36, 113, 0.0991);
+
+  > svg {
+    cursor: pointer;
+  }
+}
+
+.person-information-section {
+  margin-inline: 2rem;
+  position: relative;
+}
+
+.person-information-bg-image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  inline-size: 60px;
+  block-size: 50px;
+  overflow: visible;
+  z-index: -1;
+}
+
+.person-information-bio {
+  padding-block-start: 25px;
+  text-align: center;
+  margin-block-end: 1rem;
+  color: var(--CLR-BLUE-950);
+}
+
+.person-information-people-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.person-information-name {
+  color: var(--CLR-BLUE-950);
+  text-align: center;
+}
+
+.person-information-title {
+  color: var(--CLR-GRAY-400);
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .person-image-section {
+    margin-inline: 124px;
+
+    background-size: 520px 489.74px;
+
+    padding-block-start: 47.78px;
+    padding-block-end: 39.02px;
+    margin-block-end: 64.26px;
+
+    > img {
+      inline-size: 404.53px;
+      block-size: auto;
+    }
+  }
+
+  .img-slider-container {
+    inline-size: 7rem;
+    block-size: 3.5rem;
+    column-gap: 3rem;
+  }
+
+  .person-information-bg-image {
+    inline-size: 120px;
+    block-size: 100px;
+  }
+
+  .person-information-section {
+    margin-inline: 67px 66px;
+  }
+
+  .person-information-bio {
+    padding-block-start: 74px;
+    margin-block-end: 2rem;
+  }
+
+  .person-information-people-section {
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    block-size: 100vh;
+  }
+
+  .person-card-section {
+    display: flex;
+    margin-block-start: 0px;
+
+    background-size: 610px 150.94px;
+  }
+
+  .person-information-section {
+    order: 1;
+    margin-block-start: 204px;
+    margin-inline-start: 165px;
+
+    inline-size: 635px;
+  }
+
+  .person-information-bg-image {
+    position: absolute;
+    left: 96px;
+    overflow: visible;
+    z-index: -1;
+  }
+
+  .person-information-bio {
+    text-align: start;
+  }
+
+  .person-information-people-section {
+    justify-content: flex-start;
+  }
+
+  .person-image-section {
+    order: 2;
+
+    padding-block-start: 0px;
+    margin-inline: 0px;
+    margin-block: 0px;
+
+    > img {
+      inline-size: 540px;
+      block-size: auto;
+    }
+
+    background-size: 697px 657px;
+
+    padding-block-start: 63px;
+    padding-block-end: 54px;
+    padding-inline-start: 65px;
+    padding-inline-end: 92px;
+
+    position: absolute;
+    left: 735px;
+    top: 50px;
+    right: 73px;
+  }
+
+  .img-slider-container {
+    left: 127px;
+    bottom: 26px;
+  }
+}
