@@ -34,4 +34,6 @@
 
 ### [Pricing component with toggle (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/pricing-component-with-toggle)
 
-### [Coding-bootcamp-testimonials-slider (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/coding-bootcamp-testimonials-slider)
+### [Coding bootcamp testimonials slider (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/coding-bootcamp-testimonials-slider)
+
+### [Notification page (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/notification-page)

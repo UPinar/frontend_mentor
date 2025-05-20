@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf)
+    format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/* WEIGHT 500, 800 */
+
+:root {
+  --CLR-BLUE: hsl(219, 85%, 26%);
+  --CLR-RED: hsl(1, 90%, 64%);
+  --CLR-VERY-DARK-GREY-BLUE: hsl(224, 21%, 14%);
+  --CLR-DARK-GREY-BLUE: hsl(219, 12%, 42%);
+  --CLR-GREY-BLUE: hsl(219, 14%, 63%);
+  --CLR-LIGHT-GREY-BLUE: hsl(211, 68%, 94%);
+  --CLR-VERY-LIGHT-GREY-BLUE: hsl(205, 33%, 90%);
+  --CLR-SNOW: hsl(210, 60%, 98%);
+  --CLR-WHITE: hsl(0, 0%, 100%);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin-inline: 0;
+  padding-inline: 0;
+  margin-block: 0;
+  padding-block: 0;
+}
+
+html {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: var(--CLR-SNOW);
+}
+
+.wrapper-container {
+  block-size: inherit;
+  inline-size: inherit;
+  padding-inline: 1rem;
+  padding-block-start: 1.5rem;
+  background-color: var(--CLR-WHITE);
+
+  max-inline-size: 400px;
+}
+
+/* ----------------------------------------------- */
+
+.notification-information-section {
+  display: flex;
+  align-items: center;
+
+  margin-block-end: 1.5rem;
+
+  > .notification-header {
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: var(--CLR-VERY-DARK-GREY-BLUE);
+
+    margin-inline-end: 9px;
+  }
+
+  > .notification-count {
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: var(--CLR-WHITE);
+    background-color: var(--CLR-BLUE);
+
+    inline-size: 2rem;
+
+    display: grid;
+    place-content: center;
+    border-radius: 6px;
+  }
+
+  > .notification-mark-as-read {
+    margin-inline-start: auto;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: var(--CLR-DARK-GREY-BLUE);
+
+    cursor: pointer;
+
+    &:hover {
+      color: var(--CLR-BLUE);
+    }
+  }
+}
+/* ----------------------------------------------- */
+
+.notification-item:not(:last-child) {
+  margin-block-end: 10px;
+}
+
+.notification-item {
+  padding-inline: 1rem;
+  padding-block: 1rem;
+
+  display: flex;
+  column-gap: 13px;
+
+  img {
+    inline-size: 39px;
+    block-size: auto;
+  }
+}
+
+.red-block {
+  display: inline-block;
+
+  background-color: var(--CLR-RED);
+  inline-size: 0.5rem;
+  block-size: 0.5rem;
+  border-radius: 50%;
+
+  margin-inline-start: 7px;
+}
+
+.non-read-notification {
+  background-color: var(--CLR-SNOW);
+  border-radius: 0.5rem;
+}
+
+.notification-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+
+.notification-details {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--CLR-DARK-GREY-BLUE);
+  line-height: normal;
+  letter-spacing: 0px;
+
+  > .notification-owner {
+    margin-inline-end: 6px;
+
+    font-size: 14px;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: var(--CLR-VERY-DARK-GREY-BLUE);
+
+    cursor: pointer;
+
+    &:hover {
+      color: var(--CLR-BLUE);
+    }
+  }
+
+  > .notification-activity {
+    margin-inline-start: 6px;
+
+    font-size: 14px;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: var(--CLR-DARK-GREY-BLUE);
+
+    cursor: pointer;
+
+    &:hover {
+      color: var(--CLR-BLUE);
+    }
+  }
+
+  > .notification-place {
+    margin-inline-start: 6px;
+
+    font-size: 14px;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: var(--CLR-BLUE);
+
+    cursor: pointer;
+  }
+}
+
+.notification-time {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0px;
+  color: var(--CLR-GREY-BLUE);
+}
+
+.notification-private-message {
+  margin-block-start: 12px;
+  border: 1px solid var(--CLR-VERY-LIGHT-GREY-BLUE);
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  > .notification-private-message-text {
+    padding-inline: 1rem;
+    padding-block: 1rem;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: var(--CLR-DARK-GREY-BLUE);
+  }
+}
+
+.notification-private-message:hover {
+  background-color: var(--CLR-LIGHT-GREY-BLUE);
+}
+
+.notification-commented-image {
+  margin-inline-start: auto;
+}
+
+.notification-commented-image:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper-container {
+    max-inline-size: 730px;
+    block-size: min-content;
+    border-radius: 15px;
+
+    padding-inline: 30px;
+  }
+
+  .notification-information-section {
+    > .notification-header {
+      font-size: 1.5rem;
+    }
+
+    > .notification-mark-as-read {
+      font-size: 1rem;
+    }
+  }
+
+  .notification-item {
+    padding-inline: 20px;
+    padding-block: 18px 17px;
+  }
+
+  .notification-details {
+    font-size: 1rem;
+
+    > .notification-owner {
+      margin-inline-end: 7px;
+
+      font-size: 1rem;
+    }
+
+    > .notification-activity {
+      margin-inline-start: 7px;
+      font-size: 1rem;
+    }
+
+    > .notification-place {
+      font-size: 1rem;
+    }
+  }
+
+  .notification-time {
+    font-size: 1rem;
+  }
+
+  .notification-private-message {
+    > .notification-private-message-text {
+      padding-inline: 20px;
+      padding-block: 17px 20px;
+      font-size: 1rem;
+    }
+  }
+}
