@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+.text-preset-1 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 3.5px;
+}
+
+.text-preset-2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 2.5px;
+}
+
+.text-preset-3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0px;
+}
+
+.text-preset-4 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 2px;
+}
+
+.text-preset-5 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 2px;
+}
+
+.text-preset-6 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 0px;
+}
+
+.text-preset-7 {
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 1.25px;
+}
+
+:root {
+  --CLR-WHITE: #ffffff;
+  --CLR-BLACK: #000000;
+  --CLR-GRAY-950: #2f2f2f;
+  --CLR-GRAY-400: #adb5be;
+  --CLR-GRAY-200: #dfdee0;
+  --CLR-PURPLE-950: #21092f;
+  --CLR-PURPLE-500: #d53aff;
+  --CLR-ORANGE-400: #ff834a;
+  --CLR-BLUE-400: #47a2ff;
+  --CLR-RED-400: #ff5050;
+  --CLR-GRADIENT-1: #ffffff;
+  --CLR-GRADIENT-2: #6348fe;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin-inline: 0;
+  padding-inline: 0;
+  margin-block: 0;
+  padding-block: 0;
+}
+
+img,
+input,
+button,
+label {
+  display: block;
+  max-inline-size: 100%;
+}
+
+html {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  block-size: 100vh;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.card-details-form-section {
+  display: flex;
+  flex-direction: column;
+
+  max-inline-size: 400px;
+  margin-inline: auto;
+  block-size: 100vh;
+}
+
+.card-images-section {
+  background-color: #21092f;
+  block-size: 240px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card-back-image-container {
+  z-index: 1;
+  margin-block-start: 2rem;
+  align-self: flex-end;
+  margin-inline-end: 1rem;
+
+  position: relative;
+
+  > .card-back-image {
+    inline-size: 286px;
+    block-size: auto;
+  }
+
+  > .card-cvc-number {
+    position: absolute;
+    top: 46%;
+    left: 80%;
+    color: var(--CLR-WHITE);
+  }
+}
+
+.card-front-image-container {
+  z-index: 2;
+  margin-block-start: -68px;
+  margin-inline-start: 17px;
+
+  align-self: flex-start;
+
+  position: relative;
+
+  > .card-front-image {
+    inline-size: 285px;
+    block-size: auto;
+  }
+
+  > .card-logo {
+    position: absolute;
+
+    inline-size: 51.77px;
+    block-size: 30px;
+    top: 10%;
+    left: 6%;
+  }
+
+  > .card-number {
+    position: absolute;
+    top: 55%;
+    left: 6%;
+    color: var(--CLR-WHITE);
+  }
+
+  > .card-holder-name {
+    position: absolute;
+    top: 82%;
+    left: 6%;
+    color: var(--CLR-WHITE);
+    text-transform: uppercase;
+  }
+
+  > .card-expiry-date {
+    position: absolute;
+    top: 82%;
+    left: 80%;
+    color: var(--CLR-WHITE);
+  }
+}
+
+.card-form-section {
+  margin-block-start: 91px;
+  margin-inline: 1.5rem;
+
+  display: grid;
+  column-gap: 1.5rem;
+
+  grid-template-areas:
+    "cardholder-name cardholder-name"
+    "card-number card-number"
+    "expiry-date cvc-number"
+    "card-approval card-approval"
+    "card-button card-button";
+
+  > .cardholder-name-section {
+    grid-area: cardholder-name;
+  }
+
+  > .card-number-section {
+    grid-area: card-number;
+  }
+
+  > .card-expiry-section {
+    grid-area: expiry-date;
+  }
+
+  > .card-cvc-section {
+    grid-area: cvc-number;
+  }
+
+  > .card-button-section {
+    grid-area: card-button;
+
+    > .confirm-button {
+      cursor: pointer;
+    }
+  }
+
+  .card-approval-section {
+    grid-area: card-approval;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-block-end: 3rem;
+
+    > img {
+      margin-block-end: 2rem;
+    }
+
+    > h2 {
+      color: var(--CLR-PURPLE-950);
+      text-transform: uppercase;
+      margin-block-end: 1rem;
+    }
+
+    > p {
+      color: var(--CLR-GRAY-400);
+    }
+  }
+
+  > * {
+    margin-block-end: 1.5rem;
+  }
+}
+
+.card-expiry-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.5rem;
+  grid-template-areas:
+    "expiry-text expiry-text"
+    "expiry-month expiry-year"
+    "error-text error-text";
+
+  > input {
+    inline-size: 80px;
+  }
+
+  > label {
+    grid-area: expiry-text;
+  }
+
+  > input:first-child {
+    grid-area: expiry-month;
+  }
+
+  > input:last-child {
+    grid-area: expiry-year;
+  }
+
+  > p {
+    grid-area: error-text;
+  }
+}
+
+.empty-error {
+  margin-block-start: 0.5rem;
+  color: var(--CLR-RED-400);
+}
+
+.format-error {
+  margin-block-start: 0.5rem;
+  color: var(--CLR-RED-400);
+}
+
+label {
+  color: var(--CLR-PURPLE-950);
+  text-transform: uppercase;
+  margin-block-end: 0.5rem;
+}
+
+input {
+  inline-size: 100%;
+  block-size: 45px;
+  border: 1px solid var(--CLR-GRAY-200);
+  border-radius: 0.5rem;
+  padding-inline-start: 1rem;
+  color: var(--CLR-PURPLE-950);
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid transparent !important;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(180deg, #6348fe 0%, #610595 100%) border-box;
+}
+
+input::placeholder {
+  opacity: 0.25;
+  mix-blend-mode: normal;
+}
+
+button {
+  inline-size: 100%;
+  padding-block: 15px;
+  background: var(--CLR-PURPLE-950);
+  color: var(--CLR-WHITE);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card-details-form-section {
+    max-inline-size: 800px;
+  }
+
+  .card-images-section {
+    block-size: 340px;
+  }
+
+  .card-back-image-container {
+    margin-inline-end: 112px;
+
+    > .card-back-image {
+      inline-size: 447px;
+      block-size: auto;
+    }
+  }
+
+  .card-front-image-container {
+    margin-block-start: -106px;
+    margin-inline-start: 112px;
+
+    > .card-front-image {
+      inline-size: 447px;
+      block-size: auto;
+    }
+
+    > .card-logo {
+      inline-size: 84.09px;
+      block-size: 47px;
+    }
+  }
+
+  .card-form-section {
+    margin-block-start: 145px;
+    inline-size: 383px;
+    margin-inline: auto;
+
+    > .card-button-section {
+      margin-block-start: calc(40px - 1.5rem);
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card-details-form-section {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    grid-template-areas: "card-images card-form";
+    max-inline-size: none;
+
+    > .card-images-section {
+      grid-area: card-images;
+      block-size: inherit;
+      background-color: transparent;
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-images-section::before {
+      position: absolute;
+      content: "";
+      background-color: #21092f;
+      block-size: 100%;
+      inline-size: 430px;
+    }
+
+    > .card-form-section {
+      grid-area: card-form;
+    }
+  }
+
+  .card-front-image-container {
+    order: 1;
+    margin-inline-start: 164px;
+    margin-block-start: 189px;
+    top: 0;
+
+    .card-front-image {
+      inline-size: 447px;
+      block-size: auto;
+    }
+  }
+
+  .card-back-image-container {
+    order: 2;
+    margin-inline-start: calc(164px + 94px);
+    margin-inline-end: 0px;
+
+    align-self: flex-start;
+  }
+
+  .card-form-section {
+    block-size: 345px;
+    margin-block: 0;
+    margin-block: auto;
+    margin-inline-end: 225px;
+  }
+}

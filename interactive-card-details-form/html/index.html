@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <section class="card-details-form-section">
+      <section class="card-images-section">
+        <div class="card-back-image-container">
+          <img
+            class="card-back-image"
+            src="../images/bg-card-back.png"
+            alt="card back image"
+            width="447"
+            height="245"
+          />
+          <p class="card-cvc-number text-preset-7">000</p>
+        </div>
+        <div class="card-front-image-container">
+          <img
+            class="card-front-image"
+            src="../images/bg-card-front.png"
+            alt="card front image"
+            width="447"
+            height="245"
+          />
+          <img
+            class="card-logo"
+            src="../images/card-logo.svg"
+            alt="card logo"
+            width="84"
+            height="47"
+          />
+          <p class="card-number text-preset-2">0000 0000 0000 0000</p>
+          <p class="card-holder-name text-preset-7">Jane Appleseed</p>
+          <p class="card-expiry-date text-preset-7">00/00</p>
+        </div>
+      </section>
+      <section class="card-form-section">
+        <section class="cardholder-name-section">
+          <label class="text-preset-5">Cardholder Name</label>
+          <input
+            class="card-holder-name-input text-preset-3"
+            type="text"
+            placeholder="e.g. Jane Appleseed"
+          />
+          <p class="empty-error text-preset-7 hidden">Can't be blank</p>
+        </section>
+
+        <section class="card-number-section">
+          <label class="text-preset-5">Card Number</label>
+          <input
+            class="card-number-input text-preset-3"
+            type="text"
+            placeholder="e.g. 1234 5678 9123 0000"
+          />
+          <p class="format-error text-preset-7 hidden">
+            Wrong format, numbers only
+          </p>
+          <p class="empty-error text-preset-7 hidden">Can't be blank</p>
+        </section>
+
+        <section class="card-expiry-section">
+          <label class="text-preset-5">Exp. Date (MM/YY)</label>
+          <input
+            class="card-expiry-month-input text-preset-3"
+            type="text"
+            placeholder="MM"
+          />
+          <input
+            class="card-expiry-year-input text-preset-3"
+            type="text"
+            placeholder="YY"
+          />
+          <p class="format-error text-preset-7 hidden">
+            Wrong format, numbers only
+          </p>
+          <p class="empty-error text-preset-7 hidden">Can't be blank</p>
+        </section>
+
+        <section class="card-cvc-section">
+          <label class="text-preset-5">CVC</label>
+          <input
+            class="card-cvc-input text-preset-3"
+            type="text"
+            placeholder="e.g. 123"
+          />
+          <p class="format-error text-preset-7 hidden">
+            Wrong format, numbers only
+          </p>
+          <p class="empty-error text-preset-7 hidden">Can't be blank</p>
+        </section>
+
+        <section class="card-approval-section hidden">
+          <img
+            class="icon-complete"
+            src="../images/icon-complete.svg"
+            alt="icon complete"
+            width="80"
+            height="80"
+          />
+          <h2 class="text-preset-1">Thank you!</h2>
+          <p class="text-preset-3">We've added your card details</p>
+        </section>
+
+        <section class="card-button-section">
+          <button type="button" class="confirm-button text-preset-3">
+            Confirm
+          </button>
+        </section>
+      </section>
+    </section>
+  </body>
+  <script src="../js/script.js"></script>
+</html>
