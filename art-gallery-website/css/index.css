@@ -1,0 +1,119 @@
+:root {
+  --CLR-GREY-900: #151515;
+  --CLR-GREY-700: #444444;
+  --CLR-WHITE: #ffffff;
+  --CLR-GOLD-500: #d5966c;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin-inline: 0;
+  margin-block: 0;
+  padding-inline: 0;
+  padding-block: 0;
+}
+
+img,
+button,
+svg,
+picture {
+  display: block;
+}
+
+html {
+  font-size: 16px;
+}
+
+.wrapper-container {
+  margin-inline: 1rem;
+}
+
+.text-preset-1-desktop {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 90%;
+  letter-spacing: 0px;
+}
+
+.text-preset-1-tablet {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 90%;
+  letter-spacing: 0px;
+}
+
+.text-preset-1-mobile {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 90%;
+  letter-spacing: 0px;
+}
+
+.text-preset-2-desktop {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.text-preset-2-tablet-mobile {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 90%;
+  letter-spacing: 0px;
+}
+
+.text-preset-3-desktop {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.text-preset-3-tablet-mobile {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 90%;
+  letter-spacing: 0px;
+}
+
+.text-preset-4 {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.text-preset-5 {
+  font-family: "Outfit", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: 0px;
+}
+
+.text-preset-6 {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: 3.64px;
+}
+
+.text-preset-7 {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: 0px;
+}

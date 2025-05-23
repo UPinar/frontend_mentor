@@ -1,0 +1,42 @@
+.location-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  border: 2px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.location-button:focus {
+  border: 2px solid transparent;
+  outline: 4px solid var(--CLR-GOLD-500);
+}
+
+.location-button:hover {
+  rect:nth-of-type(1) {
+    fill: var(--CLR-GREY-900);
+  }
+  rect:nth-of-type(2) {
+    fill: var(--CLR-GOLD-500);
+  }
+}
+
+.location-image {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .location-button {
+    top: 1rem;
+    left: 39px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .location-button {
+    top: 1rem;
+    left: 212px;
+  }
+}

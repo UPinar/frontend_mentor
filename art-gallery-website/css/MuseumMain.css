@@ -1,0 +1,185 @@
+.main-section {
+  margin-block-end: 100px;
+  margin-inline: 1rem;
+}
+
+.main-picture-1 {
+  margin-block-end: 1.5rem;
+
+  > .main-image-1 {
+    inline-size: 100%;
+    block-size: auto;
+  }
+}
+
+.main-picture-2 {
+  margin-block-end: 1rem;
+
+  > .main-image-2 {
+    inline-size: 100%;
+    block-size: auto;
+  }
+}
+
+.main-picture-3 {
+  margin-block-end: 1rem;
+
+  > .main-image-3 {
+    inline-size: 100%;
+    block-size: auto;
+  }
+}
+
+.main-text-section {
+  margin-block-end: 2rem;
+}
+
+.main-title {
+  margin-block-end: 1.5rem;
+
+  text-transform: uppercase;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 90%;
+  letter-spacing: 0px;
+  color: var(--CLR-GREY-900);
+}
+
+.main-description {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: 0px;
+  color: var(--CLR-GREY-700);
+}
+
+.invitation-section {
+  padding-inline: 1.5rem;
+  padding-block: 3rem;
+  background-color: var(--CLR-GREY-900);
+}
+
+.invitation-title {
+  margin-block-end: 1.5rem;
+
+  text-transform: uppercase;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 90%;
+  letter-spacing: 0px;
+  color: var(--CLR-WHITE);
+}
+
+.invitation-description {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: 0px;
+  color: var(--CLR-WHITE);
+}
+
+@media screen and (min-width: 768px) {
+  .main-section {
+    margin-block-end: 120px;
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: 398px 280px;
+    grid-template-rows: 400px 313px 396px;
+    gap: 0.75rem;
+    grid-template-areas:
+      "main-text-section picture-1"
+      "picture-2 picture-3"
+      "picture-2 invitation-text";
+  }
+
+  .main-picture-1,
+  .main-picture-2,
+  .main-picture-3 {
+    margin-block-end: 0px;
+  }
+
+  .main-text-section {
+    margin-block-end: 0;
+    grid-area: main-text-section;
+
+    inline-size: 223px;
+    align-self: center;
+  }
+
+  .main-picture-1 {
+    grid-area: picture-1;
+
+    margin-inline-start: calc(280px - 398px);
+
+    > .main-image-1 {
+      inline-size: 398px;
+      block-size: auto;
+    }
+  }
+
+  .main-picture-2 {
+    grid-area: picture-2;
+  }
+  .main-picture-3 {
+    grid-area: picture-3;
+  }
+
+  .invitation-section {
+    grid-area: invitation-text;
+    align-self: stretch;
+    padding-block: 5rem;
+    padding-inline: 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-title {
+    font-size: 60px;
+    line-height: 100%;
+  }
+
+  .main-description {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 140%;
+    letter-spacing: 0px;
+  }
+
+  .invitation-title {
+    font-size: 60px;
+    line-height: 100%;
+  }
+
+  .invitation-description {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 140%;
+    letter-spacing: 0px;
+  }
+
+  .main-section {
+    margin-block-end: 180px;
+
+    grid-template-columns: 635px 445px;
+    grid-template-rows: 400px 313px 377px;
+    gap: 2rem;
+  }
+
+  .main-picture-1 {
+    margin-inline-start: calc(445px - 635px);
+
+    > .main-image-1 {
+      inline-size: 635px;
+      block-size: auto;
+    }
+  }
+
+  .main-text-section {
+    inline-size: 350px;
+  }
+}

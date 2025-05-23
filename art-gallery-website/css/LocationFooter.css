@@ -1,0 +1,83 @@
+.location-footer-section {
+  background-color: var(--CLR-GOLD-500);
+
+  padding-inline: 1rem;
+  padding-block: 3rem;
+}
+
+.location-footer-text {
+  margin-block-end: 2.5rem;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: 0px;
+  color: var(--CLR-GREY-900);
+}
+
+.location-footer-logo {
+  margin-block-end: 2.5rem;
+}
+
+.location-footer-socials {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+
+  > button {
+    background-color: transparent;
+    border: 2px solid transparent;
+    cursor: pointer;
+
+    svg:hover {
+      > path {
+        fill: var(--CLR-WHITE);
+      }
+    }
+  }
+
+  > button:active,
+  button:focus {
+    outline: 2px solid var(--CLR-GREY-900);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .location-footer-section {
+    padding-inline: 2.5rem;
+    padding-block: 3rem;
+
+    display: flex;
+  }
+
+  .location-footer-logo {
+    margin-block-end: 0px;
+    margin-inline-end: 4rem;
+  }
+
+  .location-footer-text {
+    margin-block-end: 0px;
+    inline-size: 276px;
+  }
+
+  .location-footer-socials {
+    margin-inline-start: auto;
+    align-self: flex-start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .location-footer-section {
+    padding-inline: 165px;
+    padding-block: 80px;
+  }
+
+  .location-footer-logo {
+    margin-inline-end: 140px;
+  }
+
+  .location-footer-text {
+    inline-size: 430px;
+  }
+}
