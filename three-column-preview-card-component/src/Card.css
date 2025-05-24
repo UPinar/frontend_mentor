@@ -1,0 +1,65 @@
+.card-section {
+  padding-inline: 3rem;
+  padding-block: 3rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  margin-block-end: 35px;
+
+  inline-size: 4rem;
+  block-size: auto;
+}
+
+.card-type {
+  margin-block-end: 25px;
+
+  text-transform: uppercase;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: var(--CLR-VERY-LIGHT-GRAY);
+}
+
+.card-description {
+  margin-block-end: 25px;
+
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  color: var(--CLR-TRANSPARENT-WHITE);
+  mix-blend-mode: normal;
+}
+
+.card-button {
+  inline-size: 146px;
+  block-size: 48px;
+  border-radius: 25px;
+  background-color: var(--CLR-VERY-LIGHT-GRAY);
+  border: none;
+  cursor: pointer;
+
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+
+.card-button:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white !important;
+}
+
+@media screen and (min-width: 768px) {
+  .card-description {
+    margin-block-end: 83px;
+  }
+}
