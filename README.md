@@ -26,6 +26,8 @@
 
 ### [Three column preview card component -- REACT -- (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/three-column-preview-card-component)
 
+### [Four card feature section -- REACT -- (NEWBIE)](https://github.com/UPinar/frontend_mentor/tree/main/four-card-feature-section)
+
 ### [Browser extensions manager UI (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/browser-extensions-manager-ui)
 
 ### [Character counter (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/character-counter)

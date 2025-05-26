@@ -1,0 +1,26 @@
+:root {
+  --CLR-RED: hsl(0, 78%, 62%);
+  --CLR-CYAN: hsl(180, 62%, 55%);
+  --CLR-ORANGE: hsl(34, 97%, 64%);
+  --CLR-BLUE: hsl(212, 86%, 64%);
+  --CLR-GREY-500: hsl(234, 12%, 34%);
+  --CLR-GREY-400: hsl(212, 6%, 44%);
+  --CLR-WHITE: hsl(0, 0%, 100%);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin-inline: 0;
+  margin-block: 0;
+  padding-inline: 0;
+  padding-block: 0;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  background-color: #fafafa;
+}
