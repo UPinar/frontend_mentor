@@ -45,3 +45,5 @@
 ### [Interactive card details form (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/interactive-card-details-form)
 
 ### [Art gallery website -- REACT -- (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/art-gallery-website)
+
+### [Tip calculator app -- REACT -- (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/tip-calculator-app)

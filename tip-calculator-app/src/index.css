@@ -1,0 +1,56 @@
+:root {
+  --CLR-WHITE: #ffffff;
+  --CLR-BLACK: #000000;
+
+  --CLR-GREY-600: #3d6666;
+  --CLR-GREY-550: #547878;
+  --CLR-GREY-500: #5e7a7d;
+  --CLR-GREY-400: #7f9d9f;
+  --CLR-GREY-300: #9ebbbd;
+  --CLR-GREY-200: #c5e4e7;
+  --CLR-GREY-50: #f3f9fa;
+
+  --CLR-GREEN-900: #00474b;
+  --CLR-GREEN-800: #085c61;
+  --CLR-GREEN-750: #0d686d;
+  --CLR-GREEN-400: #26c2ae;
+  --CLR-GREEN-200: #9fe8df;
+  --CLR-ORANGE-400: #e17052;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin-inline: 0;
+  padding-inline: 0;
+  margin-block: 0;
+  padding-block: 0;
+}
+
+input,
+label,
+img {
+  display: inline-block;
+  inline-size: 100%;
+}
+
+html {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--CLR-GREY-200);
+  min-block-size: 100vh;
+
+  display: grid;
+  place-content: center;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    align-content: start;
+  }
+}
