@@ -1,0 +1,379 @@
+/* ---------------------------------------------- */
+
+.mortgage-card {
+  background-color: var(--CLR-WHITE);
+  max-inline-size: 400px;
+}
+
+.mortgage-card-info-section {
+  padding-block: 2rem;
+  padding-inline: 1.5rem;
+
+  .card-header-section {
+    margin-block-end: 1.5rem;
+
+    .card-header {
+      margin-block-end: 0.5rem;
+
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 125%;
+      letter-spacing: 0%;
+      color: var(--CLR-SLATE-900);
+    }
+
+    .card-clear-button {
+      background-color: transparent;
+      border: none;
+      text-decoration: underline;
+
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 150%;
+      letter-spacing: 0%;
+      color: var(--CLR-SLATE-700);
+
+      cursor: pointer;
+    }
+  }
+
+  .card-main-section {
+    .card-form-section {
+      display: flex;
+      flex-direction: column;
+
+      .card-form-group:not(:last-child) {
+        margin-block-end: 1.5rem;
+      }
+
+      .card-form-group {
+        > label {
+          margin-block-end: 0.75rem;
+
+          font-size: 1rem;
+          font-weight: 500;
+          line-height: 150%;
+          letter-spacing: 0%;
+          color: var(--CLR-SLATE-700);
+        }
+
+        > .input-container {
+          block-size: 3rem;
+          border: 1px solid var(--CLR-SLATE-500);
+          border-radius: 0.25rem;
+
+          display: flex;
+          overflow: hidden;
+
+          > p {
+            display: grid;
+            place-content: center;
+
+            padding-inline: 1rem;
+            block-size: 100%;
+
+            background-color: var(--CLR-SLATE-100);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 125%;
+            letter-spacing: 0%;
+            color: var(--CLR-SLATE-700);
+          }
+
+          > input {
+            padding-inline: 1rem;
+
+            inline-size: 100%;
+            block-size: 100%;
+            border: none;
+
+            font-family: inherit;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 125%;
+            letter-spacing: 0%;
+            color: var(--CLR-SLATE-900);
+          }
+
+          > input:focus,
+          input:active {
+            outline: none;
+          }
+        }
+
+        .empty-container {
+          border: 1px solid var(--CLR-RED);
+
+          > p {
+            background-color: var(--CLR-RED);
+            color: var(--CLR-WHITE);
+          }
+        }
+
+        > .required-field {
+          margin-block-start: 0.75rem;
+
+          color: var(--CLR-RED);
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 150%;
+          letter-spacing: 0%;
+        }
+
+        .radio-container {
+          display: flex;
+          align-items: center;
+          padding-inline: 1rem;
+          block-size: 3rem;
+          border-radius: 0.25rem;
+
+          border: 1px solid var(--CLR-SLATE-500);
+
+          > input[type="radio"] {
+            margin-inline-end: 1rem;
+
+            appearance: none;
+            inline-size: 19.5px;
+            block-size: 19.5px;
+            border-radius: 50%;
+            display: inline-block;
+            color: var(--CLR-SLATE-500);
+            border: 2px solid var(--CLR-SLATE-500);
+            position: relative;
+          }
+
+          > input[type="radio"]:checked {
+            background-color: var(--CLR-WHITE);
+            border-color: var(--CLR-LIME);
+          }
+
+          input[type="radio"]:checked::before {
+            content: "";
+            position: absolute;
+            display: block;
+            inline-size: 60%;
+            block-size: 60%;
+            border-radius: 50%;
+            background: #fff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: var(--CLR-LIME);
+          }
+        }
+
+        .checked-radio-container {
+          background-color: rgba(216, 219, 47, 0.15);
+          border: 1px solid var(--CLR-LIME);
+        }
+        .radio-container:nth-of-type(1) {
+          margin-block-end: 0.75rem;
+        }
+
+        .button-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          block-size: 3.5rem;
+
+          background-color: var(--CLR-LIME);
+          border-radius: 999px;
+
+          > img {
+            margin-inline-end: 1rem;
+          }
+
+          > button {
+            background-color: transparent;
+            border: none;
+
+            color: var(--CLR-SLATE-900);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 125%;
+            letter-spacing: 0%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ---------------------------------------------- */
+
+.mortgage-card-no-result-section {
+  padding-inline: 1.5rem;
+  padding-block: 2rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--CLR-SLATE-900);
+
+  > *:not(:last-child) {
+    margin-block-end: 1rem;
+  }
+
+  > .card-no-results-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 0%;
+    color: var(--CLR-WHITE);
+  }
+
+  > .card-no-results-description {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: var(--CLR-SLATE-300);
+  }
+}
+.mortgage-card-result-section {
+  padding-inline: 1.5rem;
+  padding-block: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  background-color: var(--CLR-SLATE-900);
+
+  > .card-results-header {
+    margin-block-end: 1rem;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 0%;
+    color: var(--CLR-WHITE);
+  }
+
+  > .card-results-description {
+    margin-block-end: 1.5rem;
+
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: var(--CLR-SLATE-300);
+  }
+
+  .card-results-information-container {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+    border-top: 0.25rem solid var(--CLR-LIME);
+    padding-inline: 1rem;
+    padding-block: 1.5rem;
+
+    > h3 {
+      margin-block-end: 0.5rem;
+
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 150%;
+      letter-spacing: 0%;
+      color: var(--CLR-SLATE-300);
+    }
+
+    > .card-results-monthly-value {
+      padding-block-end: 1rem;
+      margin-block-end: 1rem;
+
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: var(--CLR-LIME);
+
+      border-bottom: 1px solid var(--CLR-LIME);
+    }
+
+    > .card-results-total-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 125%;
+      letter-spacing: 0%;
+      color: var(--CLR-WHITE);
+    }
+  }
+}
+/* ---------------------------------------------- */
+
+@media screen and (min-width: 768px) {
+  .mortgage-card {
+    margin-block: 2.5rem;
+    margin-inline: 2.5rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    max-inline-size: 750px;
+
+    .mortgage-card-info-section {
+      padding-block: 2.5rem;
+      padding-inline: 2.5rem;
+
+      .card-header-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .card-main-section {
+      .card-form-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+        grid-template-areas:
+          "amount amount"
+          "term interest"
+          "type type"
+          "button button";
+
+        > .card-form-group:nth-of-type(1) {
+          grid-area: amount;
+        }
+
+        > .card-form-group:nth-of-type(2) {
+          grid-area: term;
+        }
+
+        > .card-form-group:nth-of-type(3) {
+          grid-area: interest;
+        }
+
+        > .card-form-group:nth-of-type(4) {
+          grid-area: type;
+          margin-block-end: 2.5rem;
+        }
+
+        > .card-form-group:nth-of-type(5) {
+          grid-area: button;
+        }
+      }
+
+      .button-container {
+        inline-size: 314px;
+      }
+    }
+  }
+}
+
+/* ---------------------------------------------- */
+
+@media screen and (min-width: 1440px) {
+  .mortgage-card {
+    display: grid;
+    grid-template-columns: repeat(2, 504px);
+    max-inline-size: none;
+
+    .mortgage-card-no-result-section {
+      padding-block: 2.5rem;
+      padding-inline: 2.5rem;
+      justify-content: center;
+    }
+  }
+}
+
+/* ---------------------------------------------- */

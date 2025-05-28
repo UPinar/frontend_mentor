@@ -47,3 +47,5 @@
 ### [Art gallery website -- REACT -- (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/art-gallery-website)
 
 ### [Tip calculator app -- REACT -- (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/tip-calculator-app)
+
+### [Mortgage repayment calculator -- REACT -- (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/mortgage-repayment-calculator)

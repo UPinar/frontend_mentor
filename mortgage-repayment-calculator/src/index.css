@@ -1,0 +1,69 @@
+/* -------------------------------------------- */
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(./assets/fonts/PlusJakartaSans-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(./assets/fonts/PlusJakartaSans-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* -------------------------------------------- */
+
+:root {
+  --CLR-LIME: #d8db2f;
+  --CLR-SLATE-900: #133041;
+  --CLR-SLATE-700: #4e6e7e;
+  --CLR-SLATE-500: #6b94a8;
+  --CLR-SLATE-300: #9abed5;
+  --CLR-SLATE-100: #e4f4fd;
+  --CLR-WHITE: #ffffff;
+  --CLR-RED: #d73328;
+}
+
+/* -------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin-inline: 0;
+  margin-block: 0;
+  padding-inline: 0;
+  padding-block: 0;
+}
+
+html {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  block-size: 100vh;
+  background-color: var(--CLR-SLATE-100);
+
+  display: flex;
+  justify-content: center;
+}
+
+button,
+label,
+input,
+img {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    place-content: center;
+  }
+}
+
+/* -------------------------------------------- */
