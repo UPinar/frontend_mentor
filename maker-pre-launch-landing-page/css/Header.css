@@ -1,0 +1,112 @@
+header {
+  padding-block-start: 2rem;
+  margin-block-end: 5rem;
+
+  @media screen and (min-width: 768px) {
+    padding-block: 3rem;
+    margin-block-end: 6rem;
+
+    background-image: url(../src/assets/illustration-hero-left.svg),
+      url(../src/assets/illustration-hero-right.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 300px auto, 316px auto;
+    background-position: top 141px left -180px, top 185px right -190px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-block: 5rem;
+    margin-block-end: 155px;
+
+    background-size: auto auto, auto auto;
+    background-position: top 235px left -53px, top 235px right -90px;
+  }
+}
+
+.header-logo {
+  margin-block-end: 4rem;
+
+  display: flex;
+  margin-inline: auto;
+
+  inline-size: 140px;
+  block-size: 35px;
+
+  @media screen and (min-width: 768px) {
+    margin-block-end: 7.5rem;
+    margin-inline: 2rem 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-block-end: 7.5rem;
+    margin-inline: 165px 0;
+  }
+}
+
+.header-image {
+  margin-block-end: 4rem;
+
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.header-text-section {
+  margin-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    inline-size: 730px;
+    margin-block-end: 4rem;
+    margin-inline: auto;
+
+    background-image: url(../src/assets/bg-hero-squiggle.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.header-title {
+  margin-block-end: 1.5rem;
+
+  text-align: center;
+  color: var(--CLR-NEUTRAL-0);
+
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 120%;
+  letter-spacing: 0px;
+
+  > strong {
+    color: var(--CLR-CYAN-400);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 3rem;
+    text-wrap: balance;
+  }
+}
+
+.header-description {
+  margin-block-end: 2rem;
+
+  color: var(--CLR-NEUTRAL-400);
+  text-align: center;
+
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0px;
+
+  @media screen and (min-width: 768px) {
+    margin-block-end: 0px;
+    inline-size: 540px;
+  }
+}
+
+.header-scroll-icon {
+  display: flex;
+  margin-inline: auto;
+}

@@ -1,0 +1,228 @@
+.price-section {
+  margin-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-text-section {
+  margin-block-end: 5rem;
+
+  @media screen and (min-width: 768px) {
+    margin-block-end: 6rem;
+    max-inline-size: 540px;
+    padding-block: 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-block-end: 7rem;
+  }
+}
+
+.price-section-header {
+  margin-block-end: 1.5rem;
+
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: var(--CLR-NEUTRAL-0);
+  text-align: center;
+}
+
+.price-section-description {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0px;
+  color: var(--CLR-NEUTRAL-400);
+  text-align: center;
+}
+
+.price-cards-section {
+  margin-block-end: 5rem;
+
+  @media screen and (min-width: 768px) {
+    margin-block-end: 6rem;
+    inline-size: 445px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-block-end: 10rem;
+    display: flex;
+    inline-size:auto;
+  }
+}
+
+.price-card {
+  position: relative;
+  padding-block-start: 3rem;
+  padding-block-end:2rem;
+  padding-inline: 1.25rem;
+  border-radius: 0.5rem;
+
+  @media screen and (min-width: 768px) {
+    padding-block: 3rem;
+    padding-inline: 2rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    inline-size: 445px;
+    margin-block-end: 0px;
+  }
+}
+
+.price-card:first-child {
+  margin-block-end: 5rem;
+  background-color: var(--CLR-BLUE-800);
+
+  .price-card-title {
+    color: var(--CLR-NEUTRAL-0);
+  }
+
+  .price-card-description{
+    color: var(--CLR-NEUTRAL-0);
+    opacity: 0.6;
+    mix-blend-mode: normal;
+  }
+
+  .price-card-price {
+    color: var(--CLR-NEUTRAL-0);
+
+    > small {
+      color: var(--CLR-NEUTRAL-0);
+      opacity: 0.6;
+      mix-blend-mode: normal;
+    }
+  }
+
+  .price-card-feature {
+    color: var(--CLR-NEUTRAL-0);
+    svg path{
+      fill: var(--CLR-CYAN-400);
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-block-start: 12px;
+    margin-inline-end: 30px;
+    block-size: 425px;
+    
+  }
+}
+
+.price-card:last-child {
+  background-color: var(--CLR-CYAN-400);
+
+  .price-card-title {
+    color: var(--CLR-NEUTRAL-900);
+  }
+
+  .price-card-description{
+    color: var(--CLR-NEUTRAL-900);
+    opacity: 0.6;
+    mix-blend-mode: normal;
+  }
+
+  .price-card-price {
+    color: var(--CLR-NEUTRAL-900);
+
+    > small {
+      color: var(--CLR-NEUTRAL-900);
+      opacity: 0.6;
+      mix-blend-mode: normal;
+    }
+  }
+
+  .price-card-feature {
+    color: var(--CLR-NEUTRAL-900);
+    svg path{
+      fill: var(--CLR-BLUE-800);
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-block-end: 0px;
+    block-size: 457px;
+    
+  }
+}
+
+.price-card-logo {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  transform: translateY(-50%);
+
+  @media screen and (min-width: 768px) {
+    left: 38px;
+    
+  }
+}
+
+.price-card-title {
+  margin-block-end: 1rem;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 140%;
+  letter-spacing: 0px;
+
+  @media screen and (min-width: 768px) {
+    margin-block-end: 1.25rem;
+  }
+}
+
+.price-card-description {
+  margin-block-end: 1.5rem;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0px;
+
+  @media screen and (min-width: 768px) {
+    margin-block-end: 1.5rem;
+  }
+}
+
+.price-card-price {
+  margin-block-end: 1.5rem;
+
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 140%;
+  letter-spacing: 0px;
+
+  display: flex;
+
+  > small {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: 0px;
+
+    align-self: center;
+    margin-inline-start: 0.5rem;
+  }
+}
+
+.price-card-features {
+  list-style: none;
+}
+
+.price-card-feature {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0px;
+
+  display: flex;
+  align-items: center;
+
+  > svg {
+    margin-inline-end: 0.75rem;
+  }
+}
+
+.price-card-feature:not(:last-child) {
+  margin-block-end: 0.75rem;
+}

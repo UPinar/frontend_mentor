@@ -1,0 +1,106 @@
+.footer {
+  margin-inline: 1rem;
+  padding-block-end: 4rem;
+  background-image: url(../src/assets/bg-footer-squiggle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 1440px) {
+    padding-block-end: 6rem;
+  }
+}
+
+.footer-title {
+  margin-block-end: 2.5rem;
+
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 140%;
+  letter-spacing: 0px;
+  color: var(--CLR-NEUTRAL-0);
+  text-align: center;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-areas: 
+      "input button"
+      "error error";
+
+    grid-template-rows: 45px auto;
+    column-gap: 1.25rem;
+  }
+}
+
+.footer-input {
+  inline-size: 20rem;
+  block-size: 45px;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  padding-inline: 1.25rem;
+  padding-block: 0.75rem;
+
+  background-color: var(--CLR-BLUE-800);
+  
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 140%;
+  letter-spacing: 0px;
+  color: var(--CLR-BLUE-500);
+
+  &:active,
+  &:focus {
+    border: 2px solid transparent;
+    outline: 2px solid var(--CLR-RED-400);
+  }
+
+  @media screen and (min-width: 768px) {
+    grid-area: input;
+  }
+}
+
+.footer-error {
+  color: var(--CLR-RED-400);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0px;
+  margin-block-start: 6px;
+
+  @media screen and (min-width: 768px) {
+    grid-area: error;
+  }
+}
+
+.footer-button {
+  inline-size: 20rem;
+  block-size: 45px;
+  border:none;
+  border-radius: 999px;
+  background-color: var(--CLR-CYAN-400);
+  margin-block-start: 1.25rem;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 140%;
+  letter-spacing: 0px;
+
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    grid-area: button;
+    inline-size: 137px;
+    margin-block-start: 0px;
+  }
+}

@@ -49,3 +49,5 @@
 ### [Tip calculator app -- REACT -- (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/tip-calculator-app)
 
 ### [Mortgage repayment calculator -- REACT -- (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/mortgage-repayment-calculator)
+
+### [Maker pre launch landing page -- REACT -- (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/maker-pre-launch-landing-page)

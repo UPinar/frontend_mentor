@@ -1,0 +1,125 @@
+.work-card-section {
+  margin-block-end: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  @media screen and (min-width: 768px) {
+    margin-block-end: 6rem;
+    gap: 2rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-block-end: 10rem;
+    margin-inline: 165px;
+
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.work-card {
+  margin-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+
+    margin-inline-start: 7rem;
+
+    &:nth-of-type(odd) {
+      padding-inline-start: 3rem;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    margin-inline: 0;
+
+    &:nth-of-type(odd) {
+      padding-inline-start: 0;
+    }
+
+      &:nth-of-type(even) {
+      padding-block-start: 3rem;
+    }
+  }
+}
+
+.work-card-image-container {
+  margin-block-end: 2rem;
+
+  min-inline-size: 7.5rem;
+  block-size:  7.5rem;
+  border-radius: 2rem;
+  background-color: var(--CLR-BLUE-800);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  @media screen and (min-width: 768px) {
+    margin-block-end: 0;
+    margin-inline-end: 3rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-block-end: 3rem;
+    margin-inline-end: 0;
+    align-self: flex-start;
+
+    min-inline-size: 10rem;
+    block-size: 164px;
+  }
+}
+
+.work-card-image {
+  inline-size: 55%;
+  block-size: auto;
+}
+
+.work-card-title {
+  margin-block-end: 0.75rem;
+
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 140%;
+  letter-spacing: 0px;
+  color: var(--CLR-NEUTRAL-0);
+  text-align: center;
+
+
+  @media screen and (min-width: 768px) {
+    margin-block-end: 1rem;
+    text-align: start;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-block-end: 1.5rem;
+  }
+}
+
+.work-card-description {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0px;
+  color: var(--CLR-NEUTRAL-400);
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+    text-wrap: balance;
+  }
+
+  @media screen and (min-width: 1440px) {
+    text-align: start;
+  }
+}
