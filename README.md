@@ -51,3 +51,5 @@
 ### [Mortgage repayment calculator -- REACT -- (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/mortgage-repayment-calculator)
 
 ### [Maker pre launch landing page -- REACT -- (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/maker-pre-launch-landing-page)
+
+### [Advice generator app -- REACT -- (JUNIOR)](https://github.com/UPinar/frontend_mentor/tree/main/advice-generator-app)

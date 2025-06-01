@@ -1,0 +1,43 @@
+:root {
+  --CLR-BLUE-950: #202733;
+  --CLR-BLUE-900: #313A48;
+  --CLR-BLUE-200: #CEE3E9;
+  --CLR-GREEN-300: #53FFAA;
+}
+
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+  margin-inline: 0;
+  margin-block: 0;
+  padding-inline: 0;
+  padding-block: 0;
+}
+
+button,
+img, 
+picture {
+  display: block;
+}
+
+html {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--CLR-BLUE-950);
+  block-size: 100vh;
+}
+
+#root {
+  block-size: 100%;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    place-content: center;
+  }
+}
