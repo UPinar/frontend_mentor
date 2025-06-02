@@ -1,0 +1,256 @@
+#root {
+  margin-inline: 1rem;
+  margin-block-start: 66px;
+
+  inline-size: calc(375px - 2rem);
+
+  @media screen and (min-width: 768px) {
+    inline-size: 540px;
+  }
+}
+
+.balance-section {
+  margin-block-end: 1rem;
+
+  padding-inline: 22px;
+  padding-block: 23px;
+  background-color: #EC755D;
+  border-radius: 10px;
+
+  display: grid;
+  grid-template-columns: auto auto ;
+  grid-template-rows: min-content min-content;
+
+  grid-template-areas:
+    "balance-title balance-logo"
+    "balance-amount balance-logo";
+
+  @media screen and (min-width: 768px) {
+    padding-inline: 2rem;
+    padding-block: 1.5rem;
+  }
+}
+
+.balance-title {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 135%;
+  letter-spacing: 0px;
+  color: #FFF;
+
+  grid-area: balance-title;
+  align-self: center;
+
+  @media screen and (min-width: 768px) {
+    margin-block-end: 0.5rem;
+    font-size: 18px;
+    line-height: 125%; 
+  }
+}
+
+.balance-amount {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0px;
+  color: #FFF;
+
+  grid-area: balance-amount;
+  align-self: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 130%;
+  }
+}
+
+.balance-logo {
+  grid-area: balance-logo;
+  grid-row: 1 / -1;
+
+  inline-size: 60px;
+  block-size: 40px;
+
+  margin-inline-start: auto;
+  align-self: center;
+
+  @media screen and (min-width: 768px) {
+    inline-size: 72px;
+    block-size: 48px;
+  }
+}
+
+
+.chart-section {
+  padding-inline: 1rem;
+  padding-block: 1.5rem;
+  background-color: #FFF;;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    padding-inline: 2.5rem;
+    padding-block: 38px;
+  }
+}
+
+.chart-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0px;
+  color: #382314;
+
+  margin-block-end: 56px;
+
+  @media screen and (min-width: 768px) {
+    align-self: flex-start;
+    font-size: 32px;
+  }
+}
+
+.chart {
+  padding-block-end: 2rem;
+  border-block-end: 1px solid #F9ECE2;
+  margin-block-end: 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: flex-end;
+  gap: 0.5rem;
+  inline-size: 280px;
+
+  @media screen and (min-width: 768px) {
+    inline-size: 100%;
+    gap: 1rem;
+  }
+}
+
+.day-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.day-block{
+  background-color: #EC755D;
+  inline-size: 100%;
+  border-radius: 5px;
+  align-self: center;
+
+  cursor: pointer;
+}
+
+.day-block--highest {
+  background-color: #88BFC5;
+}
+
+.day-block--hovered {
+  background-color: #FFA896;
+}
+
+.day-block--highest.day-block--hovered {
+  background-color: #BEE4E8;
+}
+
+
+.day-amount {
+  position: absolute;
+  background-color: #382314;
+  color: #FFF;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 0px;
+
+  padding-inline: 0.25rem;
+  padding-block: 0.25rem;
+
+  bottom: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    padding-inline: 0.5rem;
+    padding-block: 0.5rem;
+  }
+}
+
+.chart-footer {
+  display: flex;
+  inline-size: 100%;
+  padding-inline: 1.5rem;
+
+  @media screen and (min-width: 768px) {
+    padding-inline: 0;
+  }
+}
+
+.chart-footer p:nth-child(1) {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 135%;
+  letter-spacing: 0px;
+  color:#92857A; 
+  margin-inline-end: auto; 
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+  > strong {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0px;
+    color: #382314;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 125%;
+    
+    > strong {
+      font-size: 48px;
+    }
+  }
+}
+
+.chart-footer p:nth-child(2) {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 135%;
+  letter-spacing: 0px;
+  color: #382314;
+  margin-inline-start: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  > small {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 135%;
+    letter-spacing: 0px;
+    color: #92857A;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 125%;
+
+    > small {
+      font-size: 18px;
+      line-height: 125%;
+    }
+  }
+}
